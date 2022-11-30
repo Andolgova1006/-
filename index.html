@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneContactList</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+                        
+                    <!-- ModalWindow -->
+    <div class="container-modal">
+        <div class="modal-window">
+            <div class="modal-window__content">
+                <div class="modal-window__header flex">
+                    <img class="modal-window__phone--img" src="./img/phone.svg" alt="phone">
+                    <span class="modal-window__text">Добавить контакт</span>
+                    <button class="modal-window__dagger btn"> <img class="dagger-img" src="./img/cross.svg" alt=""></button>
+                </div>
+                <div class="modal-window__form">
+                    <form action="#" class="modal-window__form">
+                        <div class="modal-window__name flex">
+                            <label for="name">Имя</label>
+                            <input id="name" type="text" placeholder="Аня">
+                        </div>
+                        <div class="modal-window__phone flex">
+                            <label for="">Номер</label>
+                            <input id="phone" type="tel" placeholder="+7(904)186-06-41" data-phone-pattern>
+                        </div>
+                        <div class="modal-window__favorite">
+                            <input type="checkbox" id="checkbox"> Избранное
+                        </div>
+                        <button class="modal-window__add-btn">Создать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                            <!-- ContactsPhone -->
+    <div class="container">
+        <div class="contact-list">
+            <div class="header">
+                <div class="header__name">Телефонная книга</div>
+            </div>
+            <div class="contact-list__about">
+                <div class="contact-list__search">
+                    <input type="search" class="search" placeholder="Введите имя для поиска...">
+                </div>
+                <div class="contacts-list">
+                    <ul class="contacts-list__list">
+                        <li class="contacts-list__empty">
+                            <span>Нет ни одного контакта.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <button class="footer-contact__add-btn">Добавить</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

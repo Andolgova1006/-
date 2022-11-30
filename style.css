@@ -1,0 +1,190 @@
+/* all style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+label {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.container, .container-modal {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+}
+
+.dagger-img, .fav-img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Modal window */
+.container-modal {
+    height: 100%;
+    position: relative;
+}
+
+.modal-window {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: none;
+}
+
+.modal-window__content {
+    width: 321px;
+    height: 396px;
+    background-color: rgb(185, 26, 79);
+    padding: 30px 20px 15px;
+}
+
+.modal-window__header {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-window__phone--img {
+    width: 30px;
+    height: 30px;
+}
+
+.modal-window__text {
+    font-size: 22px;
+}
+
+.modal-window__phone, .modal-window__name {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.modal-window__name {
+    padding-bottom: 20px;
+}
+
+#name, #phone {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: 3px ridge rgba(158, 19, 19, 0.6);
+}
+
+#name:focus, #phone:focus {
+    box-shadow: 3px 3px 8px 1px rgba(158, 19, 19, 0.6);
+}
+
+.modal-window__phone {
+    margin-bottom: 20px;
+}
+
+.modal-window__favorite {
+    margin-bottom: 20px;
+}
+
+.modal-window__add-btn, .footer-contact__add-btn {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-window__add-btn:hover, .footer-contact__add-btn:hover {
+    background-color: rgba(73, 11, 37, 0.6);
+} 
+
+/* Contacts style */
+
+.contact-list {
+    width: 320px;
+    background-color: rgb(59, 11, 73);
+    color: white;
+}
+
+.header {
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.header__name {
+    font-size: 34px;
+}
+
+.contact-list__search {
+    padding: 20px 50px;
+}
+
+.search {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.contacts-list__empty {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contacts-list__details {
+    justify-content: flex-start;
+    padding: 20px 10px;
+}
+
+.contacts-list__user {
+    width: 50px;
+    height: 50px;
+}
+
+.contacts-list__dscr {
+    padding: 0 10px;
+}
+
+.contacts-list__name {
+    font-size: 24px;
+}
+
+.contacts-list__phone {
+    font-size: 16px;
+}
+
+.contacts-list__btns {
+    flex-direction: column;
+}
+
+.contacts-list__remove {
+    padding-bottom: 10px;
+}
+
+/* Footer contact button */
+
+.footer-contact {
+    width: 100%;
+}
